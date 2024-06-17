@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #393E46;
+  --primary: #36E8C5;
+  --second-primary: #00ADB5;
+  --danger: #D90E41;
+  --light: #FFFFFF;
+  --review: #205FD9;
+  --pending: #EEC73C;
+  --completed: #27B557;
+  --deny: #F53838;
+  --accept: #3BAA28;
+  --web-background: #222831;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --web-background: #222831;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--web-background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
